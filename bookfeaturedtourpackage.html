@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+</head>
+
+<style>
+    h2{
+        
+        
+        color:#f2f2f2
+    }
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=number], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    /*input[type=textarea], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      height: 200px;
+
+    }*/
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top:50;
+      margin-left: 450px;
+      margin-right: 450px;
+      
+        }
+        body{
+          background-image: url("t1.webp");
+        }
+    </style>
+
+
+<body>
+    <center><h2>Please fill the form to book Featured Package</h2></center>
+    <form action="http://localhost/project/bookfeaturedtour.php" method="POST">
+
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">Enter Your Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Your name..">
+          
+              <label for="Pid">Enter Package id:</label>
+              <select  name="Pid" id="Pid" size="1">
+                <option value="pck10122">pck10122</option>
+                <option value="pck10222">pck10222</option>
+                <option value="pck10322">pck10322</option>
+                <option value="pck10422">pck10422</option>
+                <option value="pck10522">pck10522</option>
+                <option value="pck10622">pck10622</option>
+              </select> 
+              <label for="phone">Phone</label>
+              <input type="number" id="phone" name="phone" placeholder="Enter Phone Number:">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Enter email address">
+
+              <label for="Adate">Preferred Date</label>
+              <input type="text" id="Adate" name="Adate" placeholder="Enter Arrival date">
+
+
+              <label for="noa">Number of adults</label>
+              <input type="number" id="noa" name="noa" placeholder="0">
+          
+              <label for="noc">Number of children</label>
+              <input type="number" id="noc" name="noc" placeholder="0">
+
+    
+              
+              
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </form>
+</body>
+
+</html>
